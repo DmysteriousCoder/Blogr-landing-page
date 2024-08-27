@@ -270,3 +270,40 @@ main {
     font-size: 40px;
     font-weight: 600;
 }
+
+.random-cont {
+    width: 100%;
+    display: flex;
+}
+
+.random {
+    width: 100%;
+    display: flex;
+    gap: 5em;
+}
+
+.random .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3em;
+}
+
+.random .right .col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.random .head {
+    font-size: 35px;
+    font-weight: 600;
+    color: hsl(208, 49%, 24%);
+}
+
+.random .sub {
+    font-size: 20px;
+    font-weight: 400;
+    color: hsl(240, 3%, 62%);
+}
