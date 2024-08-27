@@ -387,10 +387,12 @@ footer .connect h5 {
 
     .hero .top h1 {
         font-size: 30px;
+        text-align: center;
     }
 
     .hero .top p {
         font-size: 18px;
+        text-align: center;
     }
 
     .hero .bottom {
@@ -401,11 +403,107 @@ footer .connect h5 {
         font-size: 18px;
         padding: 10px 20px;
         border-radius: 20px;
+        z-index: 3;
     }
 
     .hero .have-bg {
         font-size: 18px;
         padding: 10px 20px;
         border-radius: 20px;
+        z-index: 3;
     }
+
+    .designated-cont .illustration{
+        flex-direction: column;
+        height: 270px;
+        top: 100px;
+        right: 20px;
+    }
+
+    .designated .bottom {
+        margin-top: 200px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .designated .bottom .col {
+        margin-left: 100px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .designated .bottom .col h5 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .designated .bottom .col p {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .infra  {
+        flex-direction: column;
+    }
+
+    .infra .image {
+        width: 100%;
+        top: -350px;
+        height: 50%;
+    }
+
+    .infra .text {
+        margin-left: 0;
+        margin-top: 50%;
+        height: 50%;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .infra .text p {
+        font-size: 18px;
+    }
+
+    .infra h5 {
+        font-size: 35px;
+    }
+
+    .random {
+        flex-direction: column;
+    }
+
+    .random .head {
+        font-size: 30px;
+    }
+
+    .random .sub {
+        font-size: 18px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    footer .product h5 {
+        font-size: 20px;
+    }
+
+    footer a {
+        font-size: 16px;
+    }
+
+    footer .company h5 {
+        font-size: 20px;
+    }
+
+    footer .connect h5 {
+        font-size: 20px;
+    }
+
 }
