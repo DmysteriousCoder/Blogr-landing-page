@@ -232,7 +232,7 @@ main {
     display: flex;
     width: 100%;
     background-color: hsl(240, 10%, 16%);
-    border-radius: 0 50px 0 50px;
+    border-radius: 0 100px 0 100px;
     justify-content: center;
     align-items: center;
 }
@@ -306,4 +306,106 @@ main {
     font-size: 20px;
     font-weight: 400;
     color: hsl(240, 3%, 62%);
+}
+
+.footer-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 150px;
+    background-color: hsl(240, 10%, 16%);
+    border-radius: 0 100px 0 0;
+    padding: 60px 0;
+}
+
+footer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .product {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+footer .product h5 {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 400;
+    color: hsl(240, 2%, 79%);
+    font-size: 18px;
+}
+
+footer .company {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+footer .company h5 {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+footer .connect {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+footer .connect h5 {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+
+@media (max-width:420px) {
+    header {
+        border-radius: 0 0 0 50px;
+    }
+
+    .hero .top h1 {
+        font-size: 30px;
+    }
+
+    .hero .top p {
+        font-size: 18px;
+    }
+
+    .hero .bottom {
+        flex-direction: column;
+    }
+
+    .hero .have-border {
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    .hero .have-bg {
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
 }
