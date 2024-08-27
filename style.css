@@ -7,14 +7,20 @@
 
 body {
     width: 100%;
+    overflow-x: hidden;
 }
 
 header {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 8em;
     justify-content: center;
     align-items: center;
     background-color: hsl(13, 100%, 72%);
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
 }
 
 nav {
@@ -22,7 +28,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 0;
+    z-index: 2;
 }
 
 nav .left {
@@ -66,7 +73,71 @@ nav button {
 
 .have-bg {
     background-color: white;
-    border-radius: 25px;
+    border-radius: 30px;
     padding: 15px 30px;
     color: hsl(353, 100%, 62%);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 3em;
+}
+
+.hero .top {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    z-index: 2;
+}
+
+.hero .top h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.hero .top p {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: hsl(0, 0%, 100%);
+}
+
+.hero .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.hero .have-border {
+    padding: 15px 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 30px;
+    background: transparent;
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero .have-bg {
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: hsl(353, 100%, 62%);
+    font-weight: 600;
+}
+
+.illustration {
+    position: absolute;
+    z-index: 1;
+    background-repeat: no-repeat;
 }
