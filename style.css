@@ -18,6 +18,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: hsl(13, 100%, 72%);
+    border-radius: 0 0 0 150px;
     position: relative;
     overflow: hidden;
     height: 80vh;
@@ -140,4 +141,45 @@ nav button {
     position: absolute;
     z-index: 1;
     background-repeat: no-repeat;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.designated {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.designated .top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.designated .top h2 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.designated .bottom {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3em;
+}
+
+.designated .bottom .col {
+    display: flex;
 }
