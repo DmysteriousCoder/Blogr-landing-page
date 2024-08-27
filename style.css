@@ -146,9 +146,11 @@ nav button {
 main {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 150px;
+    gap: 25em;
 }
 
 .designated-cont {
@@ -189,6 +191,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
+    margin-left: 200px;
+    margin-right: 30px;
+    margin-top: 100px;
 }
 
 .designated .bottom .col h5 {
@@ -208,8 +213,60 @@ main {
     position: absolute;
     right: 0;
     top: 0;
-    width: auto; /* Adjust width to fit content or define a specific width */
+    width: auto; 
     display: flex;
-    justify-content: flex-end; /* Align items within the flex container */
+    justify-content: flex-end; 
     align-items: flex-start; 
+}
+
+.infra-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.infra {
+    display: flex;
+    width: 100%;
+    background-color: hsl(240, 10%, 16%);
+    border-radius: 0 50px 0 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.infra .image {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.infra .text {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    gap: 2em;
+    width: 50%;
+    margin-left: 50%;
+    padding: 100px 0;
+}
+
+.infra .text p {
+    font-size: 20px;
+    font-weight: 500;
+    color: hsl(240, 3%, 62%);
+    width: 80%;
+    line-height: 30px;
+}
+
+.infra h5 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
 }
